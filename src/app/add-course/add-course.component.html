@@ -5,23 +5,26 @@
             <div class="row d-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Course Titile</label>
-                    <input type="text" class="form-control">
+                    <input name="courseTitle" [(ngModel)]="courseTitle"  class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Description</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="courseDescription" [(ngModel)]="courseDescription" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Duration</label>
-                    <input type="text" class="form-control">
+                    <input name="courseDuration" [(ngModel)]="courseDuration"  class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Date</label>
-                   <input type="date" name="" id="" class="form-control">
+                   <input name=" courseDate" [(ngModel)]=" courseDate" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Venu</label>
-                    <input type="text" class="form-control">
+                    <input name="courseVenue" [(ngModel)]="courseVenue"  class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <button (click)="readValues()" class="btn btn-warning">Submit</button>
                 </div>
             </div>
         </div>
